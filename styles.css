@@ -1,23 +1,17 @@
-/* Reset styles */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 }
 
-/* Background */
-.background {
-    background-image: url('./cherrycry.jpg'); /* Replace with your image */
-    background-size: cover;
+.background-image {
+    background-image: url('cherrycry.jpg'); /* Add the correct path to your image */
+    background-size: contain; /* Ensures the entire image is displayed */
+    background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    filter: brightness(70%);
+    height: 100vh; /* Takes the full height of the viewport */
+    width: 100vw; /* Takes the full width of the viewport */
 }
 
 /* Content container */
