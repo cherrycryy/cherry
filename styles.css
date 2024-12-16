@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh; /* Ensures the body takes the full height of the screen */
-    background-image: url('cherrycry.jpg'); /* Replace with the correct image path */
+    background-image: url('./cherrycry.jpg'); /* Replace with the correct image path */
     background-size: cover; /* Make the image cover the entire screen */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
