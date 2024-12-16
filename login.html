@@ -20,30 +20,7 @@
         </form>
     </div>
 
-    <script>
-        // Get the form element
-        const loginForm = document.getElementById('login-form');
-
-        // Listen for form submission
-        loginForm.addEventListener('submit', function(event) {
-            event.preventDefault();  // Prevent the default form submission behavior
-
-            // You can add your login validation logic here (for now, just redirecting)
-            const username = loginForm.elements['username'].value;
-            const password = loginForm.elements['password'].value;
-
-            // Simulating a login process (for now, we will just redirect)
-            if (username && password) {
-                console.log('Login successful'); // For debugging, check the username and password
-
-                // Redirect to the dashboard page after login
-                window.location.href = 'dashboard.html'; // Change to the page you want to redirect to
-            } else {
-                alert('Please enter both username and password.');
-            }
-        });
-    </script>
-
     <script src="script.js"></script>
 </body>
 </html>
+
