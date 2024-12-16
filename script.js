@@ -1,13 +1,21 @@
-// Handle Login form submission
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission to allow validation
+// Create Account form submission handler
+document.getElementById('create-account-form').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent the default form submission
     
-    const username = document.querySelector('input[name="username"]').value;
-    const password = document.querySelector('input[name="password"]').value;
+    // Here you would typically add logic to create an account (e.g., API request)
+    console.log('Account Created');
 
-    // Here you would typically send the login data to your server
-    console.log('Logging in with username:', username, 'and password:', password);
+    // Redirect to the dashboard
+    window.location.href = "dashboard.html";  // Redirect to dashboard after account creation
+});
 
-    // Simulating a successful login and redirecting to another page
-    window.location.href = 'welcome.html'; // Redirect to a new page (you can customize this)
+// Login form submission handler
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent the default form submission
+    
+    // Here you would typically add logic to log the user in (e.g., API request)
+    console.log('User Logged In');
+    
+    // Redirect to the dashboard
+    window.location.href = "dashboard.html";  // Redirect to dashboard after login
 });
