@@ -11,7 +11,7 @@ body, html {
 
 /* Background */
 .background {
-    background-image: url('cherrycry.jpg'); /* Replace with your image */
+    background-image: url('./cherrycry.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     height: 100%;
